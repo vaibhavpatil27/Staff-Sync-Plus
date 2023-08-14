@@ -10,11 +10,11 @@ Project Task Divided by Candidates:
 
 04) Database and Backend Part ==> Vaibhav
 
-05) Sign-up, Sign-in, Register Page - Frontend 
+05) Sign-up, Sign-in, Register Page - Frontend ==> Ashwini
 
-06) Sign-up, Sign-in, Register Page - Database
+06) Sign-up, Sign-in, Register Page - Backend ==> Shreya, Vishakha 
 
-07) Backend of (05) - Vishakha, Shreya
+07) Sign-up, Sign-in, Register Page - Database ==> Vaibhav
 
 08) 
 
