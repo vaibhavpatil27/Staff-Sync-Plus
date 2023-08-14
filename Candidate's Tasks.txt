@@ -1,6 +1,7 @@
 Project Task Divided by Candidates: 
 -----------------------------------
 
+
 01) Landing Page ==> Ashwini
 
 02) ER Data Table and Diagrams ==> Vishakha, Shreya
@@ -9,11 +10,11 @@ Project Task Divided by Candidates:
 
 04) Database and Backend Part ==> Vaibhav
 
-05) 
+05) Sign-up, Sign-in, Register Page - Frontend 
 
-06) 
+06) Sign-up, Sign-in, Register Page - Database
 
-07) 
+07) Backend of (05) - Vishakha, Shreya
 
 08) 
 
