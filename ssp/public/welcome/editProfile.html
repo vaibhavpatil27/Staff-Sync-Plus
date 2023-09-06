@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        /* Additional custom styles */
+        .navbar.navbar-expand-lg {
+            background-color: #edede9 !important;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .search-form {
+            border-radius: 20px;
+        }
+
+        .btn-search {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .main-content {
+            position: relative;
+            padding: 20px;
+        }
+
+        .main-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 700px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="hn.png" alt="Logo">HyperNova
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index1.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bars"></i> Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="editProfile.html"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line"></i> Analytics Dashboard</a></li>
+                            <li><a class="dropdown-item" href="department.html"><i class="fas fa-building"></i> Departments</a></li>
+                            <li><a class="dropdown-item" href="user.html"><i class="fas fa-users"></i> Users</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark btn-search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <a class="first-img" href="#">
+            <img src="wlcm1.png" alt="Welcome Image" class="main-image">
+        </a>
+
+        <div class="container mt-5">
+            <div class="row justify-content-left">
+                <div class="col-md-6">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="editProfileTab" data-toggle="tab"
+                                        href="#editProfileForm">Edit Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="editProfileForm">
+                                    <form>
+                                        <!-- Profile form fields -->
+                                        <div class="form-group">
+                                            <label for="fullName"><strong>Full Name:</strong></label>
+                                            <input type="text" class="form-control" id="fullName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dob"><strong>DOB:</strong></label>
+                                            <input type="date" class="form-control" id="dob">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="gender"><strong>Gender:</strong></label>
+                                            <select class="form-control" id="gender">
+                                                <option value="" disabled selected>Select Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="female">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Department"><strong>Department:</strong></label>
+                                            <select class="form-control" id="department" required>
+                                                <option value="" disabled selected>Select Department</option>
+                                                <option value="Finance Department">Finance Department</option>
+                                                <option value="HR Department">HR Department</option>
+                                                <option value="IT Department">IT Department</option>
+                                                <option value="Customer Department">Customer Department</option>
+                                                <option value="Marketing Department">Marketing Department</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone"><strong>Phone:</strong></label>
+                                            <input type="tel" class="form-control" id="phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email"><strong>Email:</strong></label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+
+                                        <hr>
+
+                                        <!-- Password form fields -->
+                                        <div class="form-group">
+                                            <label for="currentPassword"><strong>Current Password:</strong></label>
+                                            <input type="password" class="form-control" id="currentPassword">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newPassword"><strong>New Password:</strong></label>
+                                            <input type="password" class="form-control" id="newPassword">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="confirmNewPassword"><strong>Re-Enter New
+                                                    Password:</strong></label>
+                                            <input type="password" class="form-control" id="confirmNewPassword">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button type="save" class="btn btn-primary btn-block">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("profileMenuItem").addEventListener("click", function (event) {
+            event.preventDefault();
+            showProfileTab();
+        });
+
+        function showProfileTab() {
+            $('#editProfileTab').tab('show');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
+

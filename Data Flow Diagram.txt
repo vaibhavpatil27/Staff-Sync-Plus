@@ -1,0 +1,135 @@
+Staff Sync Plus- Project Report
+
+
+Functions and Modules:
+
+1) Company Website landing page 
+2) Sign in: (Takes: Username(email), Password) 
+3) Sign up or New User: (Verfied email-id or mobile number using OTP) (Username(email), Password, Re-Enter Password, Submit) 
+4) Redirect to Sign-in Page
+5) After Successful login it redirect to Staff Management page.
+6) In Staff management Page:
+
+	1) Edit Profile form (For Users and Admin): 
+		Upload Profile Photo
+		Full Name
+		Contact No. 
+		Email id
+		Department
+		Role 
+		Age 
+		Gender 
+		Address 
+		Nationality
+
+	2) User Management (For Admin): 
+		1) Staff Name
+		2) Staff ID
+		3) Role
+		4) Department
+		5) Date of Joining, Date of Leave
+		6) Status: <Full time - Part time> 
+		7) Staff Contract Details:
+			Termination and Notice Period: 
+				1) Conditions under which either party can terminate the contract.
+				2) Notice period required for resignation or termination.
+				3) Severance pay or benefits, if applicable.(Amount, Paid)
+				4) Probation Period (if applicable):
+					Length of the probationary period. (6 Months, 1 year, 2 Years, Probation Period Ended)
+
+	3) Health and Safety Training Records (For Admin): 
+		1) Accident Reports()
+		2) Compliance with Health Regulations
+
+	4) Companstion and Benifits (For Admin): Health Insurance, retirement plans, and bonuses.
+
+	5) Audit Trail (For Admin):
+		Records of changes made to Employee profiles, such as updates to personal information or job titles.
+
+	6) Reports and Analytics (For Admin): 
+		attendance reports 
+		payroll summaries 
+		Employee performance insights
+	
+	7) Rewards System (For Admin): 
+		Employee achievements and provide rewards or incentives.
+
+	8) Complaint Analytics (For Admin): 
+		Cleanliness Complaints:
+		Rude Behavior Complaints:
+		Meetings Not on Time:
+		Food Supplies Complaints:
+		Trend Analysis and Reports:
+		Employee Awareness and Training:	
+	
+	9) Payroll Records (For Admin):
+		Tax Withholdings
+		Deductions (e.g., for benefits, loans, Amount)
+		Direct Deposit Information
+
+	10) Scheduling and Shift Management (For Admin): 
+		Employee id, 
+		Starting Date - Ending Date, 
+		Day or Night Shift, 
+		Submit 
+
+	11) Chat Bot (For Users and Admin): Some systems offer features like internal messaging, task assignment, and collaboration tools to improve communication and teamwork among employees or help.
+	
+
+===========================================================================================================================================================
+===========================================================================================================================================================
+
+
+Data Flow Diagram:
+
+1) Employee Personal Information: 
+	Keep a comprehensive database of employees' personal details, such as their full name, contact information, address, and emergency contacts.
+
+
+2) Employment Details: 
+	Store essential employment information, including job title, department, date of hire, employment status (full-time, part-time), and employment contract details.
+
+
+3) Talent Acquisition and Applicant Tracking System Integration: 
+	Integrate with applicant tracking systems to manage the recruitment process seamlessly.
+
+
+4) Task Reminders and Notifications: 
+	Send reminders and notifications to employees and managers for pending tasks and upcoming events.
+
+
+5) Customizable Employee Profiles: 
+	Allow HR administrators to create customized employee profiles with relevant information and photos.
+
+
+6) Employee Surveys and Feedback Management: 
+	Manage employee feedback collection and analyze survey results to improve employee engagement.
+
+
+7) Benefits and Compensation:
+
+	The system manages employee benefits, such as health insurance, retirement plans, and bonuses.
+	Employees can view and manage their benefit selections.
+
+
+8) Reports and Analytics:
+
+	The system generates various reports for HR and management, such as attendance reports, payroll summaries, and employee performance insights.
+
+
+9) Employee Recognition and Rewards System: 
+	Implement a system to acknowledge employee achievements and provide rewards or incentives.
+
+
+10) complaint Analytics:
+	Cleanliness Complaints:
+	Rude Behavior Complaints:
+	Meetings Not on Time:
+	Food Supplies Complaints:
+	Trend Analysis and Reports:
+	Employee Awareness and Training:
+
+
+
+
+

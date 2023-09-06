@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .navbar.navbar-expand-lg {
+            background-color: #edede9 !important;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .search-form {
+            border-radius: 20px;
+        }
+
+        .btn-search {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .main-content {
+            position: relative;
+            padding: 20px;
+        }
+
+        .main-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 700px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="hn.png" alt="Logo">HyperNova
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index1.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bars"></i> Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="editProfile.html"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-line"></i> Analytics Dashboard</a></li>
+                            <li><a class="dropdown-item" href="department.html"><i class="fas fa-building"></i> Departments</a></li>
+                            <li><a class="dropdown-item" href="user.html"><i class="fas fa-users"></i> Users</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark btn-search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+    <!-- <a class="first-img" href="#">
+        <img src="wlcm1.png" alt="Welcome Image" class="main-image">
+    </a> -->
+    <div class="container mt-5">
+        <div class="row justify-content-left">
+            <div class="col-md-6">
+                <div class="card">
+    
+                    <div class="card-header">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="dashboardTab" data-toggle="tab"
+                                    href="#dashboardForm">Dashboard</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="dashboardForm">
+                                <form id="roleForm">
+                                    <!-- Role form fields -->
+                                    <div class="form-group">
+                                        <label for="roleName"><strong>Full Name:</strong></label>
+                                        <input type="text" class="form-control" id="roleName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="staffId"><strong>Staff ID:</strong></label>
+                                        <input type="text" class="form-control" id="staffId" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="department"><strong>Department:</strong></label>
+                                        <select class="form-control" id="department" required>
+                                            <option value="" disabled selected>Select Department</option>
+                                            <option value="Finance Department">Finance Department</option>
+                                            <option value="HR Department">HR Department</option>
+                                            <option value="IT Department">IT Department</option>
+                                            <option value="Customer Department">Customer Department</option>
+                                            <option value="Marketing Department">Marketing Department</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="salary"><strong>Salary:</strong></label>
+                                        <input type="text" class="form-control" id="salary" required>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-primary btn-block">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Sr. no.</th>
+                <th>Full Name</th>
+                <th>Staff ID</th>
+                <th>Staff Department</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="roleTableBody">
+            <!-- Role data will be inserted here dynamically -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Include Bootstrap JS (Popper.js and Bootstrap JS) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    
+    const roleForm = document.getElementById("roleForm");
+    const roleNameInput = document.getElementById("roleName");
+    const staffIdInput = document.getElementById("staffId"); // New input field for Staff ID
+    const staffDepartmentInput = document.getElementById("department"); // Corrected ID for Staff Department
+    const salaryInput = document.getElementById("salary"); // New input field for Salary
+    const roleTableBody = document.getElementById("roleTableBody");
+
+    let roles = [];
+
+    roleForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const roleName = roleNameInput.value;
+        const staffId = staffIdInput.value; // Get Staff ID input value
+        const staffDepartment = staffDepartmentInput.value; // Get Staff Department input value
+        const salary = salaryInput.value; // Get Salary input value
+
+        if (roleName.trim() !== "" && staffId.trim() !== "" && staffDepartment.trim() !== "" && salary.trim() !== "") {
+            const newRole = {
+                id: roles.length + 1,
+                name: roleName,
+                staffId: staffId,
+                staffDepartment: staffDepartment,
+                salary: salary
+            };
+
+            roles.push(newRole);
+            populateRoleTable();
+            roleNameInput.value = "";
+            staffIdInput.value = "";
+            staffDepartmentInput.value = "";
+            salaryInput.value = "";
+        }
+    });
+
+    function populateRoleTable() {
+        roleTableBody.innerHTML = "";
+
+        roles.forEach(role => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${role.id}</td>
+                <td>${role.name}</td>
+                <td>${role.staffId}</td>
+                <td>${role.staffDepartment}</td>
+                <td>${role.salary}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" onclick="editRole(${role.id})">Edit</button>
+                    <button class="btn btn-sm btn-danger" onclick="deleteRole(${role.id})">Delete</button>
+                </td>
+            `;
+            roleTableBody.appendChild(row);
+        });
+    }
+
+    function editRole(id) {
+        const editedRoleName = prompt("Enter the new role name:");
+        if (editedRoleName !== null && editedRoleName.trim() !== "") {
+            const roleToUpdate = roles.find(role => role.id === id);
+            if (roleToUpdate) {
+                roleToUpdate.name = editedRoleName;
+                populateRoleTable();
+            }
+        }
+    }
+
+    function deleteRole(id) {
+        const roleIndex = roles.findIndex(role => role.id === id);
+        if (roleIndex !== -1) {
+            roles.splice(roleIndex, 1);
+            populateRoleTable();
+        }
+    }
+
+    // Call the function to populate the role table on page load
+    window.onload = populateRoleTable;
+</script>
+
+
+</body>
+
+</html>
